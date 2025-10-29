@@ -25,7 +25,7 @@ phrase:
     sources:
       # ATS Backend
       - file: ./config/locales/backend/<locale_name>.yml
-        project_id: 57bd7fd656f839d684b027ea142c8873
+        project_id: d63cdb4b515b5a7c17fe7330f0bdaf4d
         params:
           tags: translations
           update_translations: true
@@ -34,7 +34,7 @@ phrase:
     targets:
       # ATS Backend
       - file: ./config/locales/backend/<locale_name>.yml
-        project_id: 57bd7fd656f839d684b027ea142c8873
+        project_id: d63cdb4b515b5a7c17fe7330f0bdaf4d
         params:
           tags: translations
           file_format: yml
