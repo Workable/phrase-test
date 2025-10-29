@@ -28,28 +28,13 @@ phrase:
         project_id: 57bd7fd656f839d684b027ea142c8873
         params:
           tags: translations
-          update_translations: false
-          file_format: yml
-      # ATS Language pack
-      - file: ./config/locales/language_pack/<locale_name>.yml
-        project_id: 6f07865260c5bf2c52e330097a47d22d
-        params:
-          tags: translations
-          update_translations: false
+          update_translations: true
           file_format: yml
   pull:
     targets:
       # ATS Backend
       - file: ./config/locales/backend/<locale_name>.yml
         project_id: 57bd7fd656f839d684b027ea142c8873
-        params:
-          tags: translations
-          file_format: yml
-          include_empty_translations: false
-          include_unverified_translations: false
-      # ATS Language pack
-      - file: ./config/locales/language_pack/<locale_name>.yml
-        project_id: 6f07865260c5bf2c52e330097a47d22d
         params:
           tags: translations
           file_format: yml
