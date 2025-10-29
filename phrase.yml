@@ -1,0 +1,57 @@
+# The file defines which files to import (pull) and export (push) from the repository.
+# The params in push and pull must remain as is.
+#
+# Helpful information about push/pull params:
+#
+# push:
+# tags: Should be relevant to the concerning locale file and unique. The same tag should be used across push and pull options per locale file.
+#       Use underscores for namespacing. e.g. ats_flash, ats_inbox, meli_profile.
+# update_translations: false #Indicates whether existing translations should be updated with the file content.
+#                      In other words, indicates if the engineer can update the copies. DO NOT change this to true unless there is an actual
+#                      reason and you know what your are doing.
+#
+# pull
+# tags: Should be relevant to the concerning locale file and unique. The same tag should be used across push and pull options per locale file.
+#       Use underscores for namespacing. e.g. ats_flash, ats_inbox, meli_profile.
+# include_empty_translations: false #Indicates whether keys without translations should be included in the output as well.
+# include_unverified_translations: false #If set to false unverified translations are excluded. The copywriter can mark the translations as
+#                                  verified in Phrase
+#
+#
+# Sample configuration file: See https://support.phrase.com/hc/en-us/articles/5784093898908-Create-a-CLI-Configuration-File-Strings
+
+phrase:
+  push:
+    sources:
+      # ATS Backend
+      - file: ./config/locales/backend/<locale_name>.yml
+        project_id: 57bd7fd656f839d684b027ea142c8873
+        params:
+          tags: translations
+          update_translations: false
+          file_format: yml
+      # ATS Language pack
+      - file: ./config/locales/language_pack/<locale_name>.yml
+        project_id: 6f07865260c5bf2c52e330097a47d22d
+        params:
+          tags: translations
+          update_translations: false
+          file_format: yml
+  pull:
+    targets:
+      # ATS Backend
+      - file: ./config/locales/backend/<locale_name>.yml
+        project_id: 57bd7fd656f839d684b027ea142c8873
+        params:
+          tags: translations
+          file_format: yml
+          include_empty_translations: false
+          include_unverified_translations: false
+      # ATS Language pack
+      - file: ./config/locales/language_pack/<locale_name>.yml
+        project_id: 6f07865260c5bf2c52e330097a47d22d
+        params:
+          tags: translations
+          file_format: yml
+          include_empty_translations: false
+          include_unverified_translations: false

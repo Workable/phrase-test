@@ -1,0 +1,9 @@
+en:
+  greeting: Hello
+  farewell: Goodbye
+  buttons:
+    save: Save
+    cancel: Cancel
+  messages:
+    welcome: Welcome to the Phrase
+    updated: Your changes have been saved successfully.
