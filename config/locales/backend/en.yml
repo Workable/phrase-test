@@ -9,6 +9,10 @@ en:
   messages:
     updated: Your changes have been saved successfully.
     welcome: Welcome to the Phrase
+    items_saved:
+      zero: "No changes have been saved."
+      one: "1 change has been saved."
+      other: "%{count} changes have been saved."
   test-test:
     playground:
       popup:
