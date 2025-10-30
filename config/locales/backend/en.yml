@@ -1,9 +1,17 @@
+---
 en:
-  greeting: Hello
-  farewell: Goodbye
   buttons:
-    save: Save
     cancel: Cancel
+    save: Save
+    save!: Learn more
+  farewell: Goodbye
+  greeting: Hello
   messages:
-    welcome: Welcome to the Phrase
     updated: Your changes have been saved successfully.
+    welcome: Welcome to the Phrase
+  test-test:
+    playground:
+      popup:
+        button:
+          discard-changes: 'Discard '
+          save-changes: Save
