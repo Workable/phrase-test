@@ -28,7 +28,7 @@ phrase:
         project_id: d63cdb4b515b5a7c17fe7330f0bdaf4d
         params:
           tags: translations
-          update_translations: false
+          update_translations: true
           file_format: yml
   pull:
     targets:
