@@ -1,7 +1,12 @@
 ---
 el:
-  farewell: Αντίο!
+  buttons:
+    cancel: Άκυρο!
+    save: Αποθήκευση
+    save!: Μάθε περισσότερα
   greeting: Γεια σου, %s!
+  messages:
+    welcome: Καλώς ήλθες!
   test-test:
     playground:
       popup:
